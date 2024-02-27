@@ -1,4 +1,12 @@
+// Theme colors
+const themeColor={
+  black:"#000",
+  white:'#fff',
+  gray:'rgb(69 76 95 / 92%)',
+  yellow:"#ffff00",
+}
 // Navigation content
+
 const navData = [
   {
     title: "HOME",
@@ -47,4 +55,4 @@ const blogData = [
   },
 ];
 
-export { navData, blogData };
+export { themeColor,navData, blogData };

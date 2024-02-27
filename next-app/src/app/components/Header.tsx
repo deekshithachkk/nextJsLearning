@@ -1,7 +1,7 @@
 import Link from "next/link";
 import * as React from "react";
 import styled from "styled-components";
-import { navData } from "../helper/constant";
+import { navData, themeColor } from "../helper/constant";
 
 export function Header() {
   return (
@@ -18,16 +18,16 @@ export function Header() {
 }
 
 const TopNav = styled.div`
-  background-color: rgb(69 76 95 / 92%);
+  background-color: ${themeColor.gray};
   display: flex;
   justify-content: center;
-  color: white;
+  color: ${themeColor.white};
   font-size: 1rem;
   line-height: 5.5rem;
 `;
 const NavLink = styled(Link)`
   padding: 0 3rem;
   &:hover {
-    color: yellow;
+    color: ${themeColor.yellow};
   }
 `;

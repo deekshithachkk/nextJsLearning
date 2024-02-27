@@ -1,4 +1,5 @@
 import { styled } from "styled-components";
+import { themeColor } from "../helper/constant";
 
 export function Main() {
   return (
@@ -30,4 +31,5 @@ const CakeTitle = styled.h1`
 const Rotate = styled.span`
   display: inline-block;
   transform: rotate(45deg);
+  color:${themeColor.yellow}
 `;

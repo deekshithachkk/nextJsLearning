@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { themeColor } from '../helper/constant';
 
 function Footer() {
     return (
@@ -11,10 +12,10 @@ function Footer() {
 
 export default Footer;
 const FooterSection=styled.footer`
-background-color: rgb(69 76 95 / 92%);
+background-color: ${themeColor.gray};
 display: flex;
 justify-content: center;
-color: white;
+color: ${themeColor.white};
 font-size: 1rem;
 line-height: 9rem;
 `
