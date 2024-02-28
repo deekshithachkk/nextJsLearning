@@ -14,7 +14,7 @@ export default function Home() {
       <Layout>
   
       <Main />
-     
+
       </Layout>
     </main>
   );

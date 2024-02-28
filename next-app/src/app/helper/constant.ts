@@ -4,6 +4,7 @@ const themeColor={
   white:'#fff',
   gray:'rgb(69 76 95 / 92%)',
   yellow:"#ffff00",
+  blueGreen:"#2ea1a7",
 }
 // Navigation content
 
@@ -26,7 +27,7 @@ const navData = [
   },
   {
     title: "CONTACT",
-    path: "/contact",
+    path: "/Contact",
   },
 ];
 

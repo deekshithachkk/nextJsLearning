@@ -1,14 +1,7 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
-
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-
+ 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -112,7 +105,7 @@ a {
     color-scheme: dark;
   }
 }
-h1,h2,h3,h4,h5,h6{
-  font-family:Apple Chancery, cursive;
+h1,h2,h3,h4,h5,h6 {
+  font-family:"Apple Chancery, cursive";
   font-weight:lighter;
 }

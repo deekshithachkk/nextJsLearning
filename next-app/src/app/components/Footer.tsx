@@ -4,7 +4,7 @@ import { themeColor } from '../helper/constant';
 
 function Footer() {
     return (
-        <FooterSection>
+        <FooterSection id="footer">
             Footer
         </FooterSection>
     );
