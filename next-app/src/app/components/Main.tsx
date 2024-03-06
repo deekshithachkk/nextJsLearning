@@ -4,7 +4,7 @@ import { themeColor } from "../helper/constant";
 export function Main() {
   return (
     <MainContainer>
-      <CakeTitle data-animation="fadeInUp" data-delay=".2s">
+      <CakeTitle data-animation="fadeInUp" data-delay=".2s" >
         Healthy Made D<Rotate>e</Rotate>licious Cake
       </CakeTitle>
     </MainContainer>
@@ -25,7 +25,7 @@ const CakeTitle = styled.h1`
   left: 14%;
   color: white;
   font-size: 4rem;
-  width: 25rem;
+  width: 28rem;
   font-weight: lighter;
 `;
 const Rotate = styled.span`

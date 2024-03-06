@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { themeColor } from "../helper/constant";
 
 interface ButtonStyleProps {
-  cursor: any;
+  cursor: string;
 }
 
 function Button(props: ButtonProps) {

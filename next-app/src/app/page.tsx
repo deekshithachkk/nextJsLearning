@@ -1,21 +1,20 @@
 "use client";
-import { useRouter } from "next/navigation";
-import { Header } from "../app/components/Header";
-import Footer from "./components/Footer";
-import { Main } from "./components/Main";
-import styles from "./page.module.css";
+import { getServerAuthSession } from "@/server/auth";
+import Link from "next/link";
 import { Layout } from "./Layout/page";
+import { Main } from "./components/Main";
+import Card from "./components/Card";
 
-
-export default function Home() {
-  const router = useRouter(); //useRouter hook
+export default function HomePage() {
   return (
-    <main className={styles.main}>
+    <main>
       <Layout>
-  
-      <Main />
-
+        <Main/>
+        <section>
+          <Card/>
+        </section>
       </Layout>
     </main>
+
   );
 }

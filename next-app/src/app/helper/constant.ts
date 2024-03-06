@@ -56,4 +56,22 @@ const blogData = [
   },
 ];
 
-export { themeColor,navData, blogData };
+const userData=[{
+  email:"dee@gmail.com",
+  password:"Hello@12345"
+}]
+
+const cakeData=[
+  {
+  img:"https://preview.colorlib.com/theme/cakes/assets/img/gallery/items2.png.webp"
+},
+  {
+  img:"https://preview.colorlib.com/theme/cakes/assets/img/gallery/items1.png.webp"
+},
+  {
+  img:"https://preview.colorlib.com/theme/cakes/assets/img/gallery/items3.png.webp"
+},
+]
+
+
+export { themeColor,navData, blogData ,userData,cakeData};

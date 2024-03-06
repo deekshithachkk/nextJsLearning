@@ -60,6 +60,7 @@ function Dashboard() {
   }, []);
   return (
     <Layout>
+      <MainContainer>
       <ContactTitle>Contact</ContactTitle>
       <Form onSubmit={handleSubmit(handleOnSubmit)}>
         <Input
@@ -84,7 +85,7 @@ function Dashboard() {
         <Button type="submit" name={"CONTACT"} isDirty={isDirty} />
         <Button type="button" name={"RESET"} isDirty={isDirty} handleClick={handleReset} />
       </Form>
-      <p>{JSON.stringify(watchFields)}</p>
+      </MainContainer>
     </Layout>
   );
 }
@@ -100,4 +101,9 @@ const ContactTitle = styled.h2`
   font-size: 2rem;
   line-height: 5rem;
   text-align: center;
+`;
+
+const MainContainer = styled.div`
+  height: 100vh;
+  height: 700px;
 `;

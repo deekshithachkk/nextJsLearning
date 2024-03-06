@@ -3,18 +3,20 @@ import { styled } from "styled-components";
 import { themeColor } from "../helper/constant";
 
 function Input(props: InPutProps) {
-  const { name, placeholder, fieldType, register ,formState} = props;
+  const { name, placeholder, fieldType, register ,formState,type,id} = props;
   return (
     <InputContainer>
       {fieldType === "textarea" ? (
         <TextareaEle
           rows={5}
+          id={id}
           name={name}
+          className="border-2"
           placeholder={placeholder}
           {...register(name, { required: true })}
         />
       ) : (
-        <InputEle name={name} placeholder={placeholder} {...register(name)}/>
+        <InputEle className="border-2" id={id} type={type} name={name} placeholder={placeholder} {...register(name)}/>
       )}
     </InputContainer>
   );

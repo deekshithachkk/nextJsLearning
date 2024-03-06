@@ -1,10 +1,16 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Layout } from "../Layout/page";
 import { styled } from "styled-components";
+import { useApi } from "../API/useApi";
 import { blogData } from "../helper/constant";
 
 function Blog() {
+
+  const {data,loading,error}=useApi('http://localhost:3001/blog',{
+    method:'GET'
+  })
+  const arr=data?.blog as any
   return (
     <Layout>
       <BlogSection>
@@ -12,11 +18,11 @@ function Blog() {
             <BlogHeading>BLOG</BlogHeading>
         </BlogMainContainer>
         <BlogContainer>
-          {blogData.map((item) => (
+          {arr?.map((item:any) => (
             <BlogItem key={item.title}>
               <BlogImage src={item.image} alt="Blog image" />
             <BlogContent>
-              <BlogTitle>{item.title}</BlogTitle>
+              <BlogTitle className="pt-9">{item.title}</BlogTitle>
               <BlogDate>{item.date}</BlogDate>
               <BlogDescription>{item.description}</BlogDescription>
               <ReadMoreButton>Read More</ReadMoreButton>
